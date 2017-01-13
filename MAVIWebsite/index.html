@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MAVI</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Richa Verma</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Animal Detection</h1>
+                        <hr class="small">
+                        <span class="subheading">Using Computer Vision to Detect Animals in Outdoor Environment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    
+                        <h2 class="post-title">
+                            Description
+                        </h2>
+                        
+                            <p>This project is one of the computer vision components of Mobility Assistant for Visually Impaired <a href="http://www.cse.iitd.ac.in/mavi">(MAVI)</a>. It is in collaboration with the Indian Institute of Technology, Delhi <a href="http://www.iitd.ac.in">(IITD)</a>. It aims at using the techniques of Computer Vision and Deep Learning to detect animals in an uncontrolled, outdoor environment. The primary focus is on detecting cows and dogs. The final product will be a wearable device with all the components working together to assist outdoor navigation. All the modules have been ported to ZedBoard for testing. ZedBoard comes with a 2-core ARM processor.</p>
+
+ 
+                      
+                  
+                    
+                </div>
+                <hr>
+                <div class="post-preview">
+                <h2 class="post-title">
+                            Input
+                        </h2>
+                    <p>
+                            Image of size 640 * 480 are given as input to the animal detection module.
+                    </p>
+                    <div class="post-preview">
+                <h2 class="post-title">
+                            Output
+                        </h2>
+                    <p>
+                            A bounding box around cows and dogs, as detected in the input frame.
+                    </p>
+                    <div class="post-preview">
+                <h2 class="post-title">
+                            Example
+                        </h2>
+                    <p class="post-meta">
+                            <img src="img/cow3.jpg" height="150" width="180"/> 
+                            <img src="img/arrow-icon.png" height="50" width="50"/>
+                            <img src="img/Slide1.png" height="150" width="180"/>
+                            <br/>Sample image &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Output
+                    </p>
+                  </div>
+                <div class="post-preview">
+                    <a href="">
+                        <h2 class="post-title">
+                            Dataset
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Cow Dataset Statistics
+
+ 
+                        </h3>
+                    </a>
+                    <p class="post-meta">1. Time duration - ~ 4 hours 25 minutes <br>
+&nbsp;&nbsp;&nbsp;Negative - ~ 2 hour 35 minutes<br>
+&nbsp;&nbsp;&nbsp;Positive - ~ 1 hour 50 minutes<br>
+
+2. Number of Frames <br>
+&nbsp;&nbsp;&nbsp;Negative - ~300,000 <br>
+&nbsp;&nbsp;&nbsp;Positive - ~220,000<br>
+3. Colour<br>
+&nbsp;&nbsp;&nbsp;Black -  ~45,000<br>
+&nbsp;&nbsp;&nbsp;White - ~120,000<br>
+&nbsp;&nbsp;&nbsp;Brown - ~ 30,000<br>
+&nbsp;&nbsp;&nbsp;Black and white - ~25,000<br>
+4. Pose<br>
+&nbsp;&nbsp;&nbsp;Sideview - ~120,000<br>         &nbsp;&nbsp;&nbsp;Frontal - ~100,000<br>
+&nbsp;&nbsp;&nbsp;Standing - ~140,000   <br>      &nbsp;&nbsp;&nbsp;Sitting - ~80,000<br>
+5. Single Cows - ~100,000   <br>    &nbsp;&nbsp;&nbsp;Multiple Cows - ~120,000
+
+</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    
+                    
+                 <h2 class="post-title">
+                            HoG + Linear SVM results
+                        </h2>
+                        <h3 class="post-subtitle">
+                            1. Frontal view classifier
+                        </h3> 
+
+                        <table border="1" cellpadding="5" cellspacing="40">
+                        <tr>
+                        <th>TP</th>
+                        <th>TN</th>
+                        <th>FP</th>
+                        <th>FN</th>
+                        
+                        </tr>
+                        <tr>
+                        
+                        <td>84935</td>
+                        <td>279753</td>
+                        <td>7607</td>
+                        <td>8356</td>
+                        </tr>
+                        <tr>
+                           <td> Accuracy: 92.06%</td>
+                           
+                           <td> 
+                            Precision: 91.77% </td>
+                            <td>Recall: 91.04%</td>
+                        </tr>
+                        </table>
+                        <h3 class="post-subtitle">
+                            2. Side view classifier
+                        </h3>
+                        <table border="1" cellpadding="5" cellspacing="40">
+                        <tr>
+                        <th>TP</th>
+                        <th>TN</th>
+                        <th>FP</th>
+                        <th>FN</th>
+                        </tr>
+                        <tr>
+                        
+                        <td>80238</td>
+                        <td>150634</td>
+                        <td>7599</td>
+                        <td>5424</td>
+                        </tr>
+                        <tr>
+                            <td>Accuracy: 93.67%</td>
+                            <td>Precision: 91.34%</td>
+                            <td>Recall: 93.66%</td>
+                        </tr>
+                        </table>
+                        <h3 class="post-subtitle">
+                            
+                </div>
+                <hr>
+                <div class="post-preview">
+                    
+                        <h2 class="post-title">
+                            Faster RCNN
+                        </h2>
+                        <p>
+                            Faster RCNN gives an accuracy of 57.8%. It's because it's trained on VOC dataset and that doesn't capture Indian context.
+                            Next step: Fine-tuning faster RCNN with our own dataset.
+                        </p>
+                   
+                    <p class="post-meta"></p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        
+                    </ul>
+                    <p class="copyright text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
